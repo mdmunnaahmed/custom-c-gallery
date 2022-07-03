@@ -1,0 +1,8 @@
+.user-group-list {
+    li {
+        margin-right: -25px;
+        .user__img {
+            box-shadow: 0 0 8px hsl(var(--black)/.5);
+        }
+    }
+}

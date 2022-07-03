@@ -1,0 +1,6 @@
+.navbar {
+    @include lg-screen {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

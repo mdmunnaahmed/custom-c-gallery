@@ -1,0 +1,13 @@
+.fixed-header {
+    .header-top {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .nav-container {
+        border-radius: 0 0 5px 5px;
+    }
+}

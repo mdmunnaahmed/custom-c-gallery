@@ -1,0 +1,41 @@
+.menu-toggle {
+    margin: 10px 0;
+	position: relative;
+	display: block;
+	width: 1.5rem;
+	height: 1.25rem;
+	cursor: pointer;
+	background: transparent;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	color: hsl(var(--base));
+	font-size: 0;
+	transition: all 0.25s ease-in-out;
+	cursor: pointer;
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: currentColor;
+        transform: translate(-50%, -50%);
+        transition: transform 0.25s ease-in-out;
+        background-color: hsl(var(--base));
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: currentColor;
+        transform: translate(-50%, -50%);
+        transition: transform 0.25s ease-in-out;
+        background-color: hsl(var(--base));
+    }
+}

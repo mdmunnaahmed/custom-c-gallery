@@ -1,0 +1,133 @@
+.btn {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+  flex-shrink: 0;
+
+  &:hover {
+    box-shadow: 0 5px 10px hsl(var(--dark) / 0.2);
+  }
+
+  // Color Option
+  &--primary {
+    background: hsl(var(--primary));
+    color: hsl(var(--white));
+
+    &:hover {
+      color: hsl(var(--white));
+      background: hsl(var(--primary));
+    }
+  }
+
+  &--secondary {
+    background: hsl(var(--secondary));
+    color: hsl(var(--white));
+
+    &:hover {
+      color: hsl(var(--white));
+      background: hsl(var(--secondary));
+    }
+  }
+
+  &--success {
+    background: hsl(var(--success));
+    color: hsl(var(--white));
+
+    &:hover {
+      color: hsl(var(--white));
+      background: hsl(var(--success));
+    }
+  }
+
+  &--danger {
+    background: hsl(var(--danger));
+    color: hsl(var(--white));
+
+    &:hover {
+      color: hsl(var(--white));
+      background: hsl(var(--danger));
+    }
+  }
+
+  &--warning {
+    background: hsl(var(--warning));
+    color: hsl(var(--white));
+
+    &:hover {
+      color: hsl(var(--white));
+      background: hsl(var(--warning));
+    }
+  }
+
+  &--info {
+    background: hsl(var(--info));
+    color: hsl(var(--white));
+
+    &:hover {
+      color: hsl(var(--white));
+      background: hsl(var(--info));
+    }
+  }
+
+  &--dark {
+    background: hsl(var(--dark));
+    color: hsl(var(--white));
+
+    &:hover {
+      color: hsl(var(--white));
+      background: hsl(var(--dark));
+    }
+  }
+
+  &--light {
+    background-color: hsl(var(--white));
+    color: hsl(var(--primary));
+
+    &:hover {
+      color: hsl(var(--white));
+      background: hsl(var(--dark));
+    }
+  }
+
+  &--base {
+    overflow: hidden;
+    position: relative;
+    isolation: isolate;
+    background: hsl(var(--base));
+    color: hsl(var(--white));
+
+    &:hover {
+      color: hsl(var(--white));
+      border: 1px solid transparent;
+    }
+  }
+
+  // Button  Shape
+  &--sqr {
+    line-height: 1;
+    padding: 0.75rem;
+    font-size: 20px;
+  }
+
+  // Button Size
+  &--sm {
+    padding: 0.3rem 1rem; //8px X 16px
+  }
+
+  &--md {
+    padding: 0.5rem 1rem; //8px X 16px
+  }
+
+  &--lg {
+    padding: 0.625rem 1.25rem; //10px X 20px
+  }
+
+  &--xl {
+    padding: 0.75rem 1.5rem; //12px X 24px
+  }
+
+  &--xxl {
+    padding: 1rem 2rem; //16px X 24px
+  }
+}

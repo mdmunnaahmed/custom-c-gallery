@@ -1,0 +1,30 @@
+.breadcrumbs {
+  align-items: center;
+  &__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    &::after {
+      content: "";
+      position: relative;
+      display: inline-block;
+      right: -1rem;
+      height: 16px;
+      width: 2px;
+      background-color: hsl(var(--white));
+      transform: skew(-25deg);
+    }
+    &:last-child {
+      margin-right: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &__link {
+    color: hsl(var(--white));
+    &:hover {
+      color: hsl(var(--base));
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.custom--card {
+    border-radius: 3px;
+    background-color: hsl(var(--white));
+    border: 1px solid hsl(var(--border));
+
+    .card-header {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: 0;
+        padding: .8rem 1.5rem;
+        border-bottom: 1px solid hsl(var(--border));
+        font-family: var(--heading-font);
+        font-size: 1rem;
+        font-weight: 500;
+        &__icon {
+            display: inline-block;
+            font-size: 22px;
+            line-height: 1;
+        }
+    }
+
+    .card-title {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .card-text {
+        margin-top: 1rem;
+    }
+
+    .card-body {
+        padding: 2rem 1.5rem;
+    }
+
+    .card-footer {
+        padding: .8rem 1.5rem;
+        background: hsl(var(--light));
+        border-top: 1px solid hsl(var(--border));
+    }
+}

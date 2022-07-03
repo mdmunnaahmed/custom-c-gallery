@@ -1,0 +1,103 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &__container {
+    padding: 80px 15px;
+    overflow: hidden;
+    background:#522ec7;
+    // background-image: linear-gradient(300deg, #7f23f3, #7328e8, #672bdd, #5c2dd2, #522ec7, #3e41cd, #264fd0, #005bd1, #0075da, #008ad9, #009dd3, #1badcb);
+    // background-size: 180%;
+    // animation: bg-animation 10s infinite alternate;
+    border-radius: 8px;
+
+    @include sm-screen {
+      padding: 80px 30px;
+    }
+
+    @include md-screen {
+      padding: 80px 50px;
+    }
+
+    @include lg-screen {
+      padding-top: 90px;
+      padding-bottom: 90px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 600px;
+
+
+
+    &-title {
+      margin: 0;
+      font-size: 24px;
+      color: hsl(var(--white));
+
+      @include md-screen {
+        font-size: 34px;
+      }
+    }
+
+    &-para {
+      max-width: 55ch;
+      color: hsl(var(--white));
+    }
+  }
+
+  &__image {
+    display: none;
+
+    @include lg-screen {
+      display: block;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      bottom: 30px;
+      z-index: -1;
+      mix-blend-mode: soft-light;
+
+      @include xliv-screen {
+        mix-blend-mode: unset;
+        opacity: .8;
+      }
+
+      &-is {
+        max-width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &-left {
+      display: none;
+
+      @include lg-screen {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        bottom: 30px;
+        z-index: -1;
+        mix-blend-mode: soft-light;
+        // animation: goTop 5s infinite linear;
+        opacity: .7;
+
+        @include xliv-screen {
+          mix-blend-mode: unset;
+        }
+      }
+    }
+  }
+}

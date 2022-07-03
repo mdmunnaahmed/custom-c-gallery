@@ -1,0 +1,35 @@
+.search-tag {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px 5px 5px;
+    border-radius: 2rem;
+    background: hsl(var(--white)/0.15);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px hsl(var(--black)/.05);
+    &:hover {
+        background: hsl(var(--white)/0.4);
+        .search-tag__icon {
+            background: transparent;
+        }
+    }
+    &__icon {
+        display: grid;
+        place-items: center;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: hsl(var(--white)/.15);
+        font-size: 13px;
+        line-height: 1;
+        color: hsl(var(--light));
+        transform: rotate(270deg);
+        transition: all .3s ease;
+    }
+    &__text {
+        display: inline-block;
+        color: hsl(var(--light));
+        font-size: 12px;
+        line-height: 1;
+    }
+}

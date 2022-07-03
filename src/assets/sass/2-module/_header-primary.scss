@@ -1,0 +1,15 @@
+.header-primary {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 19;
+    background: hsl(var(--white));
+    box-shadow: 0 5px 15px hsl(var(--black)/.1);
+
+    &__content {
+        @include lg-screen {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.widget {
+  padding: 30px 15px;
+  border-radius: 15px;
+  border-top: 4px solid hsl(var(--base));
+  border-bottom: 4px solid hsl(var(--base));
+  background-color: hsl(var(--accent));
+  box-shadow: 0 15px 30px hsl(var(--black) / 0.2);
+  @include xlii-screen {
+    padding: 40px 30px;
+  }
+  &__title {
+    margin-top: 0;
+  }
+  &__link {
+    color: hsl(var(--base));
+    &:hover {
+      color: hsl(var(--accent));
+    }
+  }
+  &-alt {
+    &__head {
+      padding: 15px 30px;
+      border-radius: 5px 5px 0 0;
+      background: hsl(var(--primary));
+    }
+    &__body {
+      background: hsl(var(--light));
+      padding: 15px 30px;
+    }
+  }
+}

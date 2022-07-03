@@ -1,0 +1,28 @@
+.search-bar {
+    background: hsl(var(--white));
+    display: flex;
+    border-radius: 5px;
+
+    &__icon {
+        display: grid;
+        place-items: center;
+        padding-left: 10px;
+        flex-shrink: 0;
+        font-size: 20px;
+        color: hsl(var(--base));
+    }
+
+    &__input {
+        flex-grow: 1;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        &:focus {
+            background: transparent;
+            border: none;
+        }
+        &::placeholder {
+            color: hsl(var(--dark)/.5);
+        }
+    }
+}

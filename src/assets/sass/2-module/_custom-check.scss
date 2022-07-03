@@ -1,0 +1,15 @@
+.custom--check {
+    border-radius: 1px !important;
+    border: 1px solid hsl(var(--border));
+    background: hsl(var(--light));
+
+    &:checked {
+        background-color: hsl(var(--base));
+        border: 1px solid hsl(var(--base)/.5);
+    }
+
+    &:focus {
+        border: 1px solid hsl(var(--base)/.5);
+        box-shadow: none;
+    }
+}

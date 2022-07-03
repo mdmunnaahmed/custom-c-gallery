@@ -1,0 +1,23 @@
+.navbar-toggler {
+    padding: 0;
+    border: none;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    &[aria-expanded="true"] {
+        .menu-toggle {
+            border-color: transparent;
+
+            &::before {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            &::after {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+    }
+}

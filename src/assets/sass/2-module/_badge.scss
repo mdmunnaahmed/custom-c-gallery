@@ -1,0 +1,38 @@
+.badge {
+    border-radius: 2px;
+    &--primary {
+        background: hsl(var(--primary)/.15);
+        border: 1px solid hsl(var(--primary));
+        color: hsl(var(--primary));
+    }
+    &--secondary {
+        background: hsl(var(--secondary)/.15);
+        border: 1px solid hsl(var(--secondary));
+        color: hsl(var(--secondary));
+    }
+    &--danger {
+        background: hsl(var(--danger)/.15);
+        border: 1px solid hsl(var(--danger));
+        color: hsl(var(--danger));
+    }
+    &--success {
+        background: hsl(var(--success)/.15);
+        border: 1px solid hsl(var(--success));
+        color: hsl(var(--success));
+    }
+    &--warning {
+        background: hsl(var(--warning)/.15);
+        border: 1px solid hsl(var(--warning));
+        color: hsl(var(--warning));
+    }
+    &--info {
+        background: hsl(var(--info)/.15);
+        border: 1px solid hsl(var(--info));
+        color: hsl(var(--info));
+    }
+    &--dark {
+        background: hsl(var(--dark)/.15);
+        border: 1px solid hsl(var(--dark));
+        color: hsl(var(--dark));
+    }
+}

@@ -1,0 +1,33 @@
+.section {
+  padding-top: clamp(30px, 4vw, 60px);
+  padding-bottom: clamp(30px, 4vw, 60px);
+
+  &--sm {
+    padding-top: clamp(18px, 2vw, 30px);
+    padding-bottom: clamp(18px, 2vw, 30px);
+  }
+
+  &--top {
+    padding-top: clamp(30px, 4vw, 60px);
+  }
+
+  &--bottom {
+    padding-bottom: clamp(30px, 4vw, 60px);
+  }
+
+  &__head {
+    padding-bottom: clamp(18px, 2vw, 30px);
+  }
+
+  &__para {
+    max-width: 60ch;
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &--light {
+    background: hsl(var(--light)/.5);
+  }
+}

@@ -1,0 +1,5 @@
+.navbar-collapse {
+    @include lg-screen {
+        display: block !important;
+    }
+}

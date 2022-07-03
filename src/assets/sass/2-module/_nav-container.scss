@@ -1,0 +1,9 @@
+.nav-container {
+    position: relative;
+    background: hsl(var(--white));
+    border-radius: 5px;
+    @include lg-screen {
+        border-radius: 0;
+        background: transparent;
+    }
+}

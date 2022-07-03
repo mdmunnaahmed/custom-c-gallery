@@ -1,0 +1,11 @@
+.custom--container {
+    @include xliv-screen {
+      max-width: 1540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    @include xxl-screen {
+      max-width: 1800px;
+    }
+  }
