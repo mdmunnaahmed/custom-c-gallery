@@ -155,7 +155,15 @@ for ($i = 0; $i < box.length; $i++) {
 			box[$i].style.maxWidth = flexGrow * 230 + "px";
 		}
 		if (parseInt(screenSize) < parseInt(575)) {
-			box[$i].style.flexBasis = flexGrow * 110 + "px";
+			box[$i].style.flexBasis = flexGrow * 150 + "px";
+			box[$i].style.maxWidth = flexGrow * 350 + "px";
+		}
+		if (parseInt(screenSize) < parseInt(400)) {
+			box[$i].style.flexBasis = flexGrow * 160 + "px";
+			if (flexGrow < 1.2) {
+				box[$i].style.flexBasis = flexGrow * 400 + "px";
+				box[$i].style.maxWidth = flexGrow * 400 + "px";
+			}
 		}
 	});
 }
