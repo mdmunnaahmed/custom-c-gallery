@@ -2277,6 +2277,7 @@ textarea.form--control:focus {
     overflow: hidden;
     position: relative;
     isolation: isolate;
+    height: 100%;
 }
 
 .gallery__link:hover::after {

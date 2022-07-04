@@ -134,39 +134,45 @@ window.addEventListener("resize", function (e) {
 
 let box = document.querySelectorAll(".gallery li");
 
-for ($i = 0; $i < box.length; $i++) {
-	let widthAll = box[$i].offsetWidth;
-	let heightAll = box[$i].offsetHeight;
-	let flexGrow = widthAll / heightAll;
-	box.forEach(function () {
-		box[$i].style.flexGrow = flexGrow;
-		box[$i].style.maxWidth = flexGrow * 320 + "px";
-		if (parseInt(screenSize) > parseInt(991)) {
-			box[$i].style.flexBasis = flexGrow * 220 + "px";
-		}
-		if (parseInt(screenSize) < parseInt(991)) {
-			box[$i].style.flexBasis = flexGrow * 150 + "px";
-			box[$i].style.maxWidth = flexGrow * 230 + "px";
-		}
-		if (parseInt(screenSize) < parseInt(575)) {
-			box[$i].style.flexBasis = flexGrow * 160 + "px";
-			box[$i].style.maxWidth = flexGrow * 250 + "px";
-		}
-		if (parseInt(screenSize) < parseInt(575)) {
-			box[$i].style.flexBasis = flexGrow * 130 + "px";
-			box[$i].style.maxWidth = flexGrow * 220 + "px";
-		}
-		if (flexGrow < 1.2) {
-			if (parseInt(screenSize) < parseInt(400)) {
-				box[$i].style.flexBasis = flexGrow * 450 + "px";
-				box[$i].style.maxWidth = flexGrow * 450 + "px";
+const MyFunction = () => {
+	for ($i = 0; $i < box.length; $i++) {
+		let widthAll = box[$i].offsetWidth;
+		let heightAll = box[$i].offsetHeight;
+		let flexGrow = widthAll / heightAll;
+		box.forEach(function () {
+			box[$i].style.flexGrow = flexGrow;
+			box[$i].style.maxWidth = flexGrow * 320 + "px";
+			if (parseInt(screenSize) > parseInt(991)) {
+				box[$i].style.flexBasis = flexGrow * 220 + "px";
 			}
-		}
-		if (flexGrow < 0.8) {
-			if (parseInt(screenSize) < parseInt(400)) {
-				box[$i].style.flexBasis = flexGrow * 550 + "px";
-				box[$i].style.maxWidth = flexGrow * 550 + "px";
+			if (parseInt(screenSize) < parseInt(991)) {
+				box[$i].style.flexBasis = flexGrow * 150 + "px";
+				box[$i].style.maxWidth = flexGrow * 230 + "px";
 			}
-		}
-	});
-}
+			if (parseInt(screenSize) < parseInt(575)) {
+				box[$i].style.flexBasis = flexGrow * 160 + "px";
+				box[$i].style.maxWidth = flexGrow * 250 + "px";
+			}
+			if (parseInt(screenSize) < parseInt(575)) {
+				box[$i].style.flexBasis = flexGrow * 130 + "px";
+				box[$i].style.maxWidth = flexGrow * 220 + "px";
+			}
+			if (flexGrow < 1.2) {
+				if (parseInt(screenSize) < parseInt(400)) {
+					box[$i].style.flexBasis = flexGrow * 450 + "px";
+					box[$i].style.maxWidth = flexGrow * 450 + "px";
+				}
+			}
+			if (flexGrow < 0.8) {
+				if (parseInt(screenSize) < parseInt(400)) {
+					box[$i].style.flexBasis = flexGrow * 550 + "px";
+					box[$i].style.maxWidth = flexGrow * 550 + "px";
+				}
+			}
+		});
+	}
+	return true;
+};
+
+$(window).on("resize", MyFunction);
+MyFunction();
