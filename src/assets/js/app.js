@@ -132,18 +132,12 @@ window.addEventListener("resize", function (e) {
 });
 // Screen Size Counting End
 
-// box.forEach(function () {
-// 	let width = box.offsetWidth;
-// 	let height = box.offsetHeight;
-// });
-
 let box = document.querySelectorAll(".gallery li");
 
 for ($i = 0; $i < box.length; $i++) {
 	let widthAll = box[$i].offsetWidth;
 	let heightAll = box[$i].offsetHeight;
 	let flexGrow = widthAll / heightAll;
-	console.log(widthAll);
 	box.forEach(function () {
 		box[$i].style.flexGrow = flexGrow;
 		box[$i].style.maxWidth = flexGrow * 320 + "px";
@@ -155,14 +149,23 @@ for ($i = 0; $i < box.length; $i++) {
 			box[$i].style.maxWidth = flexGrow * 230 + "px";
 		}
 		if (parseInt(screenSize) < parseInt(575)) {
-			box[$i].style.flexBasis = flexGrow * 150 + "px";
-			box[$i].style.maxWidth = flexGrow * 350 + "px";
-		}
-		if (parseInt(screenSize) < parseInt(400)) {
 			box[$i].style.flexBasis = flexGrow * 160 + "px";
-			if (flexGrow < 1.2) {
-				box[$i].style.flexBasis = flexGrow * 400 + "px";
-				box[$i].style.maxWidth = flexGrow * 400 + "px";
+			box[$i].style.maxWidth = flexGrow * 250 + "px";
+		}
+		if (parseInt(screenSize) < parseInt(575)) {
+			box[$i].style.flexBasis = flexGrow * 130 + "px";
+			box[$i].style.maxWidth = flexGrow * 220 + "px";
+		}
+		if (flexGrow < 1.2) {
+			if (parseInt(screenSize) < parseInt(400)) {
+				box[$i].style.flexBasis = flexGrow * 450 + "px";
+				box[$i].style.maxWidth = flexGrow * 450 + "px";
+			}
+		}
+		if (flexGrow < 0.8) {
+			if (parseInt(screenSize) < parseInt(400)) {
+				box[$i].style.flexBasis = flexGrow * 550 + "px";
+				box[$i].style.maxWidth = flexGrow * 550 + "px";
 			}
 		}
 	});
