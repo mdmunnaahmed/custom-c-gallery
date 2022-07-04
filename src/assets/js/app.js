@@ -133,7 +133,6 @@ window.addEventListener("resize", function (e) {
 // Screen Size Counting End
 
 let box = document.querySelectorAll(".gallery li");
-
 const MyFunction = () => {
 	for ($i = 0; $i < box.length; $i++) {
 		let widthAll = box[$i].offsetWidth;
@@ -151,28 +150,21 @@ const MyFunction = () => {
 			}
 			if (parseInt(screenSize) < parseInt(575)) {
 				box[$i].style.flexBasis = flexGrow * 160 + "px";
-				box[$i].style.maxWidth = flexGrow * 250 + "px";
-			}
-			if (parseInt(screenSize) < parseInt(575)) {
-				box[$i].style.flexBasis = flexGrow * 130 + "px";
-				box[$i].style.maxWidth = flexGrow * 220 + "px";
+				box[$i].style.maxWidth = 100 + "%";
 			}
 			if (flexGrow < 1.2) {
 				if (parseInt(screenSize) < parseInt(400)) {
-					box[$i].style.flexBasis = flexGrow * 450 + "px";
-					box[$i].style.maxWidth = flexGrow * 450 + "px";
+					box[$i].style.flexBasis = flexGrow * 250 + "px";
 				}
 			}
-			if (flexGrow < 0.8) {
+			if (flexGrow < 1) {
 				if (parseInt(screenSize) < parseInt(400)) {
-					box[$i].style.flexBasis = flexGrow * 550 + "px";
-					box[$i].style.maxWidth = flexGrow * 550 + "px";
+					box[$i].style.flexBasis = 100 + "%";
 				}
 			}
 		});
 	}
 	return true;
 };
-
 $(window).on("resize", MyFunction);
 MyFunction();
