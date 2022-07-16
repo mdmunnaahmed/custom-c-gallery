@@ -9,8 +9,8 @@
   &__container {
     padding: 80px 15px;
     overflow: hidden;
-    background:#522ec7;
-    // background-image: linear-gradient(300deg, #7f23f3, #7328e8, #672bdd, #5c2dd2, #522ec7, #3e41cd, #264fd0, #005bd1, #0075da, #008ad9, #009dd3, #1badcb);
+    // background:#522ec7;
+    background-image: linear-gradient(300deg, #7f23f3, #7328e8, #672bdd, #5c2dd2, #522ec7, #3e41cd, #264fd0, #005bd1, #0075da, #008ad9, #009dd3, #1badcb);
     // background-size: 180%;
     // animation: bg-animation 10s infinite alternate;
     border-radius: 8px;
@@ -60,7 +60,8 @@
     display: none;
 
     @include lg-screen {
-      display: block;
+      display: flex;
+      justify-content: flex-end;
       position: absolute;
       top: 30px;
       right: 30px;

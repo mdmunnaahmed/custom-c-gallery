@@ -1,0 +1,13 @@
+.header-top {
+    background: hsl(var(--dark-600));
+    @include lg-screen {
+        .primary-menu {
+            justify-content: flex-start;
+        }
+        .primary-menu__link {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color: hsl(var(--white));
+        }
+    }
+}

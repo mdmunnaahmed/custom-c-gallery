@@ -2,6 +2,11 @@
   padding-top: clamp(30px, 4vw, 60px);
   padding-bottom: clamp(30px, 4vw, 60px);
 
+  &--xl {
+    padding-top: clamp(60px, 6vw, 120px);
+    padding-bottom: clamp(60px, 6vw, 120px);
+  }
+
   &--sm {
     padding-top: clamp(18px, 2vw, 30px);
     padding-bottom: clamp(18px, 2vw, 30px);
@@ -19,12 +24,20 @@
     padding-bottom: clamp(18px, 2vw, 30px);
   }
 
+  &__head-xl {
+    padding-bottom: clamp(30px, 4vw, 60px);
+  }
+
   &__para {
-    max-width: 60ch;
+    max-width: 50ch;
   }
 
   &__title {
     margin-top: 0;
+
+    span {
+      color: hsl(var(--base));
+    }
   }
 
   &--light {

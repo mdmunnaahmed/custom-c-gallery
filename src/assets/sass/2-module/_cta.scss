@@ -1,0 +1,17 @@
+.cta {
+    padding: 30px 15px;
+    border-radius: 5px;
+    background: hsl(var(--white));
+    @include sm-screen {
+        padding: 40px 30px;
+    }
+    @include md-screen {
+        padding: 40px 25px;
+    }
+    @include xlii-screen {
+        padding: 60px 40px;
+    }
+    &__title {
+        margin-top: 0;
+    }
+}

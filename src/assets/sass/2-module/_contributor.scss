@@ -1,0 +1,38 @@
+.contributor {
+    border-radius: 8px;
+    box-shadow: 0 5px 10px hsl(var(--black)/.2);
+    &__head {
+        height: 100px;
+        position: relative;
+        border-radius: 8px 8px 0 0;
+        background-color: hsl(var(--base));
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &__img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        left: 50%;
+        bottom: -30px;
+        transform: translateX(-50%);
+        border: 7px solid hsl(var(--white));
+    }
+    &__body {
+        padding: 40px 15px 20px;
+        background: hsl(var(--white));
+        border-radius: 0 0 8px 8px;
+    }
+    &__name {
+        margin: 0;
+        text-align: center;
+    }
+    &__contributons {
+        display: block;
+        text-align: center;
+        font-size: 13px;
+    }
+}

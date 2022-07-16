@@ -1,0 +1,15 @@
+.cta-section {
+    position: relative;
+    isolation: isolate;
+    background-image: url(../images/cta-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: hsl(var(--black)/.6);
+    }
+}

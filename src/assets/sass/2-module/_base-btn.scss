@@ -1,0 +1,44 @@
+.base-btn {
+    display: inline-flex;
+    align-items: center;
+    min-width: 150px;
+    padding: 15px 30px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: .05em;
+    font-family: var(--heading-font);
+    color: hsl(var(--white));
+    background: hsl(var(--base));
+    transition: all .3s ease;
+
+    &:hover {
+        &::after {
+            margin-left: 15px;
+            opacity: 1;
+            max-width: auto;
+        }
+    }
+
+    &::after {
+        content: "\f061";
+        font-family: 'Line Awesome Free';
+        font-weight: 900;
+        max-width: 0;
+        font-size: 16px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all .3s ease;
+    }
+}

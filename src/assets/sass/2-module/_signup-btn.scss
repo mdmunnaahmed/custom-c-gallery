@@ -1,0 +1,19 @@
+.signup-btn {
+    display: inline-block;
+    padding: 3px 15px;
+    border-radius: 2px;
+    font-size: 13px;
+    border: 1px solid hsl(var(--dark)/.4);
+    color: hsl(var(--dark));
+    transition: all .3s ease;
+
+    @include lg-screen {
+        border: 1px solid hsl(var(--light)/.4);
+        color: hsl(var(--light));
+    }
+
+    &:hover {
+        background: hsl(var(--light));
+        color: hsl(var(--dark));
+    }
+}
